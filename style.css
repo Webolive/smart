@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#titre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: #F7E3A9;
+    font-size: 2vw;
+    color: #0B5394;
+}
+#marqueur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+.letters, .motCle, .definition {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+}
+
+/* element lettre */
+
+.elementL {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    bottom: 0px;
+    z-index: 2;
+    transform: translateY(300px);
+    transition: transform 1s ease-out;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.elementL:nth-child(1):hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.elementL:nth-child(2):hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.elementL:nth-child(3):hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.elementL:nth-child(4):hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.elementL:nth-child(5):hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Element Mot cle */
+
+h3 {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 1.5vw;
+}
+.elementM {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    font-size: 1.15vw;
+    color: #F7E3A9;
+}
+.elementM:nth-child(1) {
+    background-color: #B85B22;
+}
+.elementM:nth-child(2) {
+    background-color: #45818E;
+}
+.elementM:nth-child(3) {
+    background-color: #F7E3A9;
+    color: #0B5394;
+}
+.elementM:nth-child(4) {
+    background-color: #38761D;
+}
+.elementM:nth-child(5) {
+    background-color: #0B5394;
+}
+
+/* element definition */
+
+.definition {
+    display: flex;
+    width: 90%;
+    }
+.specifique, .mesurable, .atteignable, .realiste, .temporel {
+    width: 300px;
+    max-width: 300px;
+    align-items: center;
+}
+.specifique .elementCache {
+    background-color: #B85B22;
+}
+.mesurable .elementCache {
+    background-color: #45818E;
+}
+.atteignable .elementCache {
+    display: none;
+    background-color: #F7E3A9;
+    padding: 0 10px 10px 10px;
+    text-align: justify;
+    font-size: 1vw;
+    color: #0B5394;
+}
+.realiste .elementCache {
+    background-color: #38761D;
+}
+.temporel .elementCache {
+    background-color: #0B5394;
+}
+.specifique .elementCache, .mesurable .elementCache, .realiste .elementCache, .temporel .elementCache {
+    display: none;
+    padding: 0 10px 10px 10px;
+    text-align: justify;
+    font-size: 1vw;
+    color: #F7E3A9;
+}
+
+.voir {
+    cursor: pointer;
+}
+.voir:hover + .elementCache {
+    display: flex;
+    height: auto;
+    max-width: 300px;
+}
+.specifique .voir {
+    height: 50px;
+    background-color: #B85B22;
+    color: #F7E3A9;
+    font-weight: bold;
+}
+.mesurable .voir {
+    height: 50px;
+    background-color: #45818E;
+    color: #F7E3A9;
+    font-weight: bold;
+}
+.atteignable .voir {
+    height: 50px;
+    background-color: #F7E3A9;
+    color: #0B5394;
+    font-weight: bold;
+}
+.realiste .voir {
+    height: 50px;
+    background-color: #38761D;
+    color: #F7E3A9;
+    font-weight: bold;    
+}
+.temporel .voir {
+    height: 50px;
+    background-color: #0B5394;
+    color: #F7E3A9;
+    font-weight: bold;
+}
