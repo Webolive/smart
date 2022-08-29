@@ -10,8 +10,9 @@ body {
     position: fixed;
     width: 100%;
     background-color: #F7E3A9;
-    font-size: 2vw;
+    font-size: 1.3rem;
     color: #0B5394;
+    z-index: 5;
 }
 #marqueur {
     display: flex;
@@ -121,7 +122,7 @@ h3 {
     background-color: #F7E3A9;
     padding: 0 10px 10px 10px;
     text-align: justify;
-    font-size: 1vw;
+    font-size: 1rem;
     color: #0B5394;
 }
 .realiste .elementCache {
@@ -134,7 +135,7 @@ h3 {
     display: none;
     padding: 0 10px 10px 10px;
     text-align: justify;
-    font-size: 1vw;
+    font-size: 1rem;
     color: #F7E3A9;
 }
 
@@ -146,6 +147,7 @@ h3 {
     height: auto;
     max-width: 300px;
 }
+
 .specifique .voir {
     height: 50px;
     background-color: #B85B22;
