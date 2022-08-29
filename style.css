@@ -73,14 +73,14 @@ body {
 h3 {
     text-align: center;
     padding-top: 40px;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
 }
 .elementM {
     display: flex;
     justify-content: center;
     height: 300px;
     width: 300px;
-    font-size: 1.15vw;
+    font-size: 1.15rem;
     color: #F7E3A9;
 }
 .elementM:nth-child(1) {
